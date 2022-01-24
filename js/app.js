@@ -2,18 +2,22 @@ const button = document.getElementById("btn");
 const color = document.querySelector(".color");
 
 const colors = [
-    "#FF5733",
-    "#F9FF33",
-    "#4471FF",
+    "yellow",
+    "brown",
+    "pink",
     "red",
     "green",
-    "rgb(85, 255, 51)",
+    "blue",
+    "grey",
+    "beige",
+    "orange",
+    "aqua",
 ];
 
 button.addEventListener("click", () => {
-    let hexColor = colors[getRandomNumber()];
-    document.body.style.backgroundColor = hexColor;
-    color.textContent = hexColor;
+    const randomColor = colors[getRandomNumber()];
+    document.body.style.backgroundColor = randomColor;
+    color.textContent = randomColor;
 });
 
 function getRandomNumber() {
